@@ -27,6 +27,7 @@
 }
 
 #input-mic {
+    visibility: hidden;
     display: inline-block;
     position: absolute;
     top: 50%;
@@ -177,13 +178,12 @@ input#user-input:-moz-placeholder {
     margin-left: 1.25rem;
     border-top-left-radius: 0.625rem;
     border-top-right-radius: 0.625rem;
-    background: rgba(0,0,0,0.3);
 }
 
 #chat-flow {
     text-align: left;
     width: calc(100% + 20px);
-    max-height:  15.625rem;
+    max-height:  32.625rem;
     overflow: hidden;
 }
 
@@ -196,24 +196,24 @@ input#user-input:-moz-placeholder {
     overflow: visible;
     position: relative;
     margin-left: 5.3125rem;
-    max-width:  20rem;
+    max-width:  45rem;
 }
 
 .watson-message,
 .user-message {
     border-radius: 0.375rem;
-    font-family: "Helvetica Neue for IBM Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue for IBM", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1rem;
-    color: #FFFFFF;
+    color: #000000;
     padding: 1.25rem 1.875rem;
     display: inline-block;
     margin: 0.3125rem 0;
-    max-width: calc(100% - 5.3125rem);
+    max-width: calc(100% - 4.225rem);
     word-wrap: break-word;
 }
 
 .watson-message {
-    background: #9E4CE6;
+    background: #ffffff;
 }
 
 .user-message {
@@ -237,5 +237,5 @@ input#user-input:-moz-placeholder {
 }
 
 .watson .pre-bar::before {
-    border-left-color: white;
+    border-left-color: #9e4ce6;
 }
