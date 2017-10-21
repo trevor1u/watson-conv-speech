@@ -1,0 +1,20 @@
+---
+declared-services:
+  wats-conv-ec:
+    label: conversation
+    plan: lite
+  Speech2text-ec:
+    label: speech_to_text
+    plan: standard
+  Text2speech-ec:
+    label: text_to_speech
+    plan: standard
+applications:
+- name: conv-speech
+  command: npm start
+  path: .
+  memory: 256M
+  services:
+  - wats-conv-ec
+  - Speech2text-ec
+  - Text2speech-ec
