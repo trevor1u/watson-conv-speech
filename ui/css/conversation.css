@@ -172,7 +172,6 @@ input#user-input:-moz-placeholder {
 }
 
 #chat-scroll-wrapper{
-    position: absolute;
     bottom:  5.625rem;
     padding-top: 0.3125rem;
     margin-left: 1.25rem;
@@ -183,8 +182,10 @@ input#user-input:-moz-placeholder {
 #chat-flow {
     text-align: left;
     width: calc(100% + 20px);
-    max-height:  32.625rem;
+    min-height: 45rem;
+    max-height: 47.625rem;
     overflow: hidden;
+    padding-top: 70px;
 }
 
 #chat-flow:hover {

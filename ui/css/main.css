@@ -111,6 +111,7 @@ body {
     position: relative;
     min-width: 325px;
     max-width: 1100px;
+    height: 100%;
 }
 
 #svg_size {
