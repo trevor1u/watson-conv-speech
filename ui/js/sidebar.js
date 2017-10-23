@@ -28,16 +28,19 @@ var Sidebar = (function() {
   };
 
   var suggestions = [
-    'Turn on the headlights',
-    'Shut off my lights',
-    'Play some music',
-    'What’s my ETA?',
-    'Show me what’s nearby',
-    'Find a gas station',
-    'Turn my radio up'
+    'en-US Allison',
+    'en-US Lisa',
+    'en-US Michael',
+    'en-GB Kate'
   ];
 
-
+  var voices = [
+  	'en-US_AllisonVoice',
+	'en-US_LisaVoice',
+	'en-US_MichaelVoice',
+	'en-GB_KateVoice'
+  ]
+  
   // Publicly accessible methods defined
   return {
     init: init,

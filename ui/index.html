@@ -35,7 +35,7 @@
 <body>
     <div id="svg_wrapper">
         <div id="output-audio" class="audio-on" onclick="TTSModule.toggle()" value="ON"></div>
-        <button id="help" class="tooltip-dialog-btn" onclick="Sidebar.toggle()">What can I ask?</button>
+        <button id="help" class="tooltip-dialog-btn" onclick="Sidebar.toggle()">Settings</button>
         <div class="chatUi">
             <div id="chat-scroll-wrapper"><div id="chat-flow"></div></div>
             <div id="input-wrapper" class="responsive-columns-wrapper">
@@ -47,12 +47,11 @@
                 </label>
             </div>
         </div>
-        <div id="tooltip-dialog-list"></div>
         <div id="sidebar">
             <div class="close-div" onclick="Sidebar.toggle()">
                 <img src="images/close-button.png" class="close" alt="close" />
             </div>
-            <p class="pre-bar">I’m trained on these topics:</p>
+            <p class="pre-bar">Speech options:</p>
             <ul id="suggestion-list"></ul>
         </div>
     </div>

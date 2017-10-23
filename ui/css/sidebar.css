@@ -15,6 +15,7 @@
  */
 
 #help {
+	visibility: hidden;
     padding: 0.75rem 1.5625rem;
     background: white;
     position: absolute;
@@ -56,8 +57,7 @@
 
 #sidebar .suggestion-btn {
     background-color: transparent;
-    border:  0.125rem solid #01A88F;
-    border-radius: 1.75rem;
+    border: none;
     font-family: "Helvetica Neue for IBM Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.875rem;
     color: #01A88F;

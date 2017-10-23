@@ -19,7 +19,9 @@
 /* global TooltipDialogs: true, Conversation: true, ConversationResponse: true, Sidebar: true, Animations: true, Common: true */
 
 (function() {
-  TooltipDialogs.init();
+//  TooltipDialogs.init();
+    Api.initConversation(); // Load initial Watson greeting after overlays are gone.
+    Conversation.focusInput();
   Conversation.init();
   ConversationResponse.init();
   Sidebar.init();
