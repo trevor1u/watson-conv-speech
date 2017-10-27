@@ -6,7 +6,7 @@ declared-services:
   Speech2text-ec:
     label: speech_to_text
     plan: standard
-  Text2speech-ec:
+  TextToSpeech-oa:
     label: text_to_speech
     plan: standard
 applications:
