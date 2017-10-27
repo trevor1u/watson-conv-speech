@@ -1,9 +1,9 @@
 ---
 declared-services:
-  wats-conv-ec:
+  Conversation-oa:
     label: conversation
     plan: lite
-  Speech2text-ec:
+  SpeechToText-oa:
     label: speech_to_text
     plan: standard
   TextToSpeech-oa:
@@ -15,6 +15,6 @@ applications:
   path: .
   memory: 256M
   services:
-  - wats-conv-ec
-  - Speech2text-ec
-  - Text2speech-ec
+  - Conversation-oa
+  - SpeechToText-oa
+  - TextToSpeech-oa
