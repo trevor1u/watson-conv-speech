@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+require('dotenv').config({silent: true});
 
 const watson = require('watson-developer-cloud');
 const vcapServices = require('vcap_services');
 
 const credentials = Object.assign({
   username: process.env.TEXT_TO_SPEECH_USERNAME || '<username>',
-  password: process.env.TEXT_TO_SPEECH_PASSWORD || '<username>',
+  password: process.env.TEXT_TO_SPEECH_PASSWORD || '<password>',
   url: process.env.TEXT_TO_SPEECH_URL || 'https://stream.watsonplatform.net/text-to-speech/api',
   version: 'v1'
 }, vcapServices.getCredentials('text_to_speech'));
@@ -36,7 +36,6 @@ if (!credentials || !credentials.username || credentials.username === '<username
     'in your working application, please refer to the https://github.com/watson-developer-cloud/car-dashboard ' +
     'README documentation on how to set these variables.');
 }
-
 
 module.exports = function initSpeechToText(app) {
   app.get('/api/text-to-speech/token', (req, res, next) =>

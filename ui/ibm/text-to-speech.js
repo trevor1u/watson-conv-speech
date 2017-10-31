@@ -21,7 +21,7 @@ var TTSModule = (function() {
   var audio = null; // Initialize audio to null
   var button = document.getElementById('output-audio');
   button.value = 'ON'; // TTS is default - not mute
-  Common.hide(button); // In case user is using invalid browsers
+//  Common.hide(button); // In case user is using invalid browsers
 
   return {
     init: init,

@@ -218,7 +218,6 @@ input#user-input:-moz-placeholder {
 }
 
 .user-message {
-    background: #00B4A0;
 }
 
 .user-message::before {
@@ -231,6 +230,7 @@ input#user-input:-moz-placeholder {
 }
 
 .user img {
+	visibility: hidden;
     height: 3.75rem ;
     position: absolute;
     left: -4.6875rem;

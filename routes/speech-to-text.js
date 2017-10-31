@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+require('dotenv').config({silent: true});
 
 const watson = require('watson-developer-cloud');
 const vcapServices = require('vcap_services');
