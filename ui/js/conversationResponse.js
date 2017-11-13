@@ -22,8 +22,13 @@
 var ConversationResponse = (function () {
   'use strict';
 
+  var initialized = false;
+  
   return {
     init: init,
+    isInit: function() {
+    	return initialized;
+    },
     responseHandler: responseHandler
   };
 
@@ -93,9 +98,10 @@ var ConversationResponse = (function () {
     Api.setWatsonPayload = function (payload) {
       currentResponsePayloadSetter.call(Api, payload);
       responseHandler(payload);
+      initialized = true;
     };
+    
   }
-
 
 
   // Called when a Watson response is received, manages the behavior of the app based

@@ -18,6 +18,7 @@
     padding: 1.25rem;
     background: white;
     position: relative;
+    visibility:hidden;
 }
 
 #input-mic-holder {

@@ -25,9 +25,11 @@
   Conversation.init();
   ConversationResponse.init();
   Sidebar.init();
-  Animations.init();
+//  Panel.init();
+//  Animations.init();
   // Used as a cloak to delay displaying the app until it's likely done rendering
-  Common.wait(Animations.isInitialized, function() {
+  Common.wait(ConversationResponse.isInit, function() {
     document.body.style.visibility = 'visible';
+    document.getElementById("input-wrapper").style.visibility='visible';
   }, 50);
 }());

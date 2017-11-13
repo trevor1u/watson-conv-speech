@@ -57,12 +57,16 @@
 .tooltip-dialog-btn {
     font-family: "Helvetica Neue for IBM Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.875rem;
-    border:  0.125rem solid #01A88F;
-    border-radius: 2.5rem;
+    border:  0.025rem solid #01A88F;
+    border-radius: none;
     color: #01A88F;
     background-color: transparent;
     cursor: pointer;
     z-index: 10;
+}
+
+button.tooltip-dialog-btn:hover {
+	border-color: #000000;
 }
 
 .tooltip-dialog-btn-wrapper {
