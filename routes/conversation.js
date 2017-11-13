@@ -48,11 +48,11 @@ const updateMessage = (input, response) => {
     // user's intent . In these cases it is usually best to return a disambiguation message
     // ('I did not understand your intent, please rephrase your question', etc..)
     if (intent.confidence >= 0.75) {
-      responseText = 'I understood your intent was ' + intent.intent;
+      responseText = 'Understood intent ' + intent.intent;
     } else if (intent.confidence >= 0.5) {
-      responseText = 'I think your intent was ' + intent.intent;
+      responseText = 'Assumed intent ' + intent.intent;
     } else {
-      responseText = 'I did not understand your intent';
+      responseText = 'Not understood';
     }
   }
   response.output.text = responseText;
@@ -70,9 +70,7 @@ module.exports = function(app) {
           text: 'The app has not been configured with a <b>WORKSPACE_ID</b> environment variable. Please refer to the ' +
             '<a href="https://github.com/watson-developer-cloud/conversation-simple">README</a> ' +
             'documentation on how to set this variable. <br>' +
-            'Once a workspace has been defined the intents may be imported from ' +
-            '<a href="https://github.com/watson-developer-cloud/conversation-simple/blob/master/training/car_workspace.json">here</a> ' +
-            'in order to get a working application.'
+            'The chat session will only be functional after a conversation with intents and dialogue are defined using the Watson tooling'
         }
       });
     }

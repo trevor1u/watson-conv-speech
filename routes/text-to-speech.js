@@ -32,9 +32,7 @@ const authorizationService = watson.authorization(credentials);
 if (!credentials || !credentials.username || credentials.username === '<username>') {
   // eslint-disable-next-line
   console.warn('WARNING: The app has not been configured with a TEXT_TO_SPEECH_USERNAME and/or ' +
-    'a TEXT_TO_SPEECH_PASSWORD environment variable. If you wish to have text to speech ' +
-    'in your working application, please refer to the https://github.com/watson-developer-cloud/car-dashboard ' +
-    'README documentation on how to set these variables.');
+    'a TEXT_TO_SPEECH_PASSWORD environment variable.');
 }
 
 module.exports = function initSpeechToText(app) {
