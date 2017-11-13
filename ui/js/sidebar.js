@@ -64,7 +64,7 @@ var Sidebar = (function() {
           'classNames': ['suggestion-btn'],
           'attributes': [{
             'name': 'onclick',
-            'value': 'Sidebar.toggle(); Conversation.sendMessage("' + suggestions[i] + '")'
+            'value': 'Sidebar.toggle(); TTSModule.setVoice("' + voices[i] +'"); sv[("innerText" in sv) ? "innerText" : "textContent"] = ' + '"'+ suggestions[i] + '";'
           }]
         }]
       };

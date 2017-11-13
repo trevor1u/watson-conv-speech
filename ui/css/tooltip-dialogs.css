@@ -54,7 +54,7 @@
     outline: none;
 }
 
-.tooltip-dialog-btn, .suggestion-btn {
+.tooltip-dialog-btn {
     font-family: "Helvetica Neue for IBM Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.875rem;
     border:  0.125rem solid #01A88F;

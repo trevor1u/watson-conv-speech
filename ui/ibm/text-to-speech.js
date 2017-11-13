@@ -22,17 +22,22 @@ var TTSModule = (function() {
   var button = document.getElementById('output-audio');
   button.value = 'ON'; // TTS is default - not mute
 //  Common.hide(button); // In case user is using invalid browsers
+  
+  var voice = 'en-US_MichaelVoice';
 
   return {
     init: init,
-    toggle: toggle
+    toggle: toggle,
+    setVoice: function(who) {
+        voice = who;
+    }
   };
 
   function init() {
     textToSpeech();
     checkBrowsers();
   }
-
+  
   // Create a callback when a new Watson response is received to start speech
   function textToSpeech() {
     var currentResponsePayloadSetter = Api.setWatsonPayload;
@@ -77,7 +82,7 @@ var TTSModule = (function() {
             }
             audio = WatsonSpeech.TextToSpeech.synthesize({
               text: payload.text, // Output text/response
-              voice: 'en-US_MichaelVoice', // Default Watson voice
+              voice: voice, // Default Watson voice
               autoPlay: true, // Automatically plays audio
               token: token
             });

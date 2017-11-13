@@ -15,7 +15,6 @@
  */
 
 #help {
-	visibility: hidden;
     padding: 0.75rem 1.5625rem;
     background: white;
     position: absolute;
@@ -27,7 +26,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: calc(100% - 5.5rem);
+    height: calc(100% - 20.5rem);
     width: 18.75rem;
     /*visibility: hidden;*/
     -webkit-transform: translateX(100%);
@@ -45,7 +44,7 @@
 
 #sidebar ul {
     list-style: none;
-    padding: 0 0 0 2.5rem;
+    padding: 0 0 1.5rem 2.5rem;
     margin: 0;
 }
 
@@ -55,19 +54,36 @@
     display: block;
 }
 
+#sv {
+	padding: 0 0 0.75rem 0;
+	display: block;
+    background-color: transparent;
+    color: #01745e;
+    font-family: "Helvetica Neue for IBM Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.675rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
 #sidebar .suggestion-btn {
     background-color: transparent;
-    border: none;
+    min-width: 9rem;
     font-family: "Helvetica Neue for IBM Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.875rem;
     color: #01A88F;
     padding: 0.625rem 1.25rem;
+    border:  0.025rem solid #01A88F;
+    border-radius: none;
     cursor: pointer;
     z-index: 10;
 }
 
+#sidebar button.suggestion-btn:hover {
+	border-color: #01745e;
+}
+
 #sidebar p {
-    padding: 2.5rem 1.25rem 1.5625rem 2.5rem;
+    padding: 2.5rem 1.25rem 0.2625rem 2.5rem;
     font-size: 1rem;
     margin-bottom: 0;
     color: white;
